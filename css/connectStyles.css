@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.layout{
+    display: grid;
+    height: 100vh;
+    background-color: silver;
+    grid-template-columns: auto;
+    grid-template-rows: 35% auto auto 75px;
+    grid-template-areas:"logo"
+                        "form"
+                        "monitor"
+                        "footer";
+}
+header{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+section#form{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+section#monitor{
+    grid-area: monitor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer{    
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+}
+.logo_img{
+    height: 100%;
+}
+h2{
+    margin-bottom: 2%;
+}
+.btnCon{
+    padding: 5px 10px;
+}
+.monitorArea{
+    background-color: white;
+    height: 70%;
+    width: 70%;
+}
+.btnMon{
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+}
+@media screen and (max-width: 450px){
+    .monitorArea{
+        justify-items: center;
+        width: 95%;
+        height: 90%;
+    }
+    .btnMon{
+        width: 45%;
+        margin: 5px;
+    }
+}
