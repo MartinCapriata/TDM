@@ -1,17 +1,72 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: silver;
 }
 .layout{
     display: grid;
     height: 100vh;
-    background-color: silver;
-    grid-template-columns: minmax(20%, 100px) auto minmax(10%, 100px);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:"toolbar" "modules" "modules"
-                        "toolbar" "tpop" "step"
-                        "toolbar" "tpop" "step"
-                        "toolbar" "tpop" "step"
-                        "toolbar" "tpop" "step"
-                        "toolbar" "tpop" "step";
+    grid-template-columns:10% repeat(7, 1fr) ;
+    grid-template-rows:repeat(3, 1fr) repeat(3, 15%) ;
+    grid-template-areas:"nav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav"
+                        "nav workArea workArea workArea workArea workArea workArea workArea"
+                        "nav workArea workArea workArea workArea workArea workArea workArea"
+                        "alarm workArea workArea workArea workArea workArea workArea workArea"
+                        "up    workArea workArea workArea workArea workArea workArea workArea"
+                        "down  workArea workArea workArea workArea workArea workArea workArea";
+}
+
+.navMenu{
+    grid-area: nav;
+}
+.alarm{
+    grid-area: alarm;   
+}
+.up{
+    grid-area: up;
+}
+.down{
+    grid-area: down;
+}
+.tpopNav{
+    grid-area: tpopNav;
+}
+.tpopNavMob{
+        display: none;
+    }
+.workArea{
+    grid-area: workArea;
+    background-color:antiquewhite ;
+    border-style: solid;
+    border: 10px;
+    border-color: rgb(163, 1, 1);
+}
+.btn{
+    background: linear-gradient(155deg, white 0%, gray 100%);
+}
+.border{
+    border-style: solid;
+    border: 1px;
+    border-color: black;
+}
+.hijo{
+    height: 100%;
+}
+.modules{
+    height: 10%;
+}
+@media screen and (max-width: 576px){
+    .layout{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas:"nav tpopNavMob tpopNavMob"
+                            "workArea workArea workArea"
+                            "alarm up down";
+    }
+    .tpopNavMob{
+        grid-area: tpopNavMob;
+}
+    .tpopNav{
+        display: none;
+    }
 }
