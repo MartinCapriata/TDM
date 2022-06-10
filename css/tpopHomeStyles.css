@@ -30,6 +30,7 @@
 }
 .tpopNav{
     grid-area: tpopNav;
+    padding: 0;
 }
 .tpopNavMob{
         display: none;

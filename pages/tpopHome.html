@@ -43,16 +43,17 @@
     </div>
     
     <!-- Navegador TPOP para los modulos de la maquina -->
-    <ul class="nav nav-pills nav-justified tpopNav border container-fluid" id="pills-tab" role="tablist">
-        <div class="row d-flex flex-row flex-fill align-items-center">
+    <nav class="container-fluid d-flex tpopNav border">
+      <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+        <div class="row flex-fill align-items-center">
           <li class="nav-item col" role="presentation">
           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">HOME</button>
           </li>
           <li class="nav-item col">
             <a class="nav-link" data-bs-toggle="pill" href="#asu">ASU</a>
           </li>
-          <li>
-            <button class="nav-link" id="pills-sas-tab" data-bs-toggle="pill"   data-bs-target="#pills-sas" type="button" role="tab"  aria-controls="pills-sas" aria-selected="false">SAS</button>
+          <li class="nav-item col">
+            <a class="nav-link" data-bs-toggle="pill" href="#assu">ASU</a>
           </li>
           <li class="nav-item col" role="presentation">
             <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill"  data-bs-target="#pills-uv" type="button" role="tab"  aria-controls="pills-uv" aria-selected="false">UV</button>
@@ -91,7 +92,7 @@
           </li>
         </div>
       </ul>
-
+    </nav>
     <!--Navegador TPOP que solo se vera en mobiles -->
     <nav class="tpopNavMob">
       <li class="nav-item dropdown">
@@ -105,11 +106,10 @@
     </li>
     </nav>
       <!-- Areas de trabajo para los distintos modulos -->
-      <section id="workArea">
-        <div class="tab-content hijo" id="pills-tabContent">
+        <div class="workArea tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Home</div>
           <!--Pagina para ASU -->
-          <div  id="asu" class="tab-pane fade workArea container-fluid">
+          <div  id="asu" class="tab-pane fade">
             <div class="row">
             PAGINA ASU  
             </div>
@@ -121,14 +121,13 @@
           <div class="tab-pane fade" id="pills-fs" role="tabpanel" aria-labelledby="pills-fs-tab" tabindex="0">Prof</div>
           <div class="tab-pane fade" id="pills-su" role="tabpanel" aria-labelledby="pills-su-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="pills-dimc" role="tabpanel" aria-labelledby="pills-dimc-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="pills-assu" role="tabpanel" aria-labelledby="pills-assu-tab" tabindex="0">...</div>
+          <div class="workArea tab-pane fade" id="pills-assu" role="tabpanel" aria-labelledby="pills-assu-tab" tabindex="0"><iframe src="../pages/tpop/assu.html" height="100%" width="100%"></iframe></div>
           <div class="tab-pane fade" id="pills-perox" role="tabpanel" aria-labelledby="pills-perox-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="pills-pf" role="tabpanel" aria-labelledby="pills-pf-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="pills-ffu" role="tabpanel" aria-labelledby="pills-ffu-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="pills-cip" role="tabpanel" aria-labelledby="pills-cip-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab" tabindex="0">...</div>
         </div>
-      </section>
  
 <script src="..//js/bootstrap.bundle.min.js"></script>
 </body>
