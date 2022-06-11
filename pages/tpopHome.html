@@ -43,68 +43,108 @@
     </div>
     
     <!-- Navegador TPOP para los modulos de la maquina -->
-    <nav class="container-fluid d-flex tpopNav border">
-      <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
-        <div class="row flex-fill align-items-center">
-          <li class="nav-item col" role="presentation">
+    <section class="container-fluid tpopNav">
+      <ul class="nav nav-pills nav-justified d-flex flex-column" id="pills-tab" role="tablist">
+        <div class="d-flex">
+          <li class="nav-item" role="presentation">
           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">HOME</button>
           </li>
-          <li class="nav-item col">
-            <a class="nav-link" data-bs-toggle="pill" href="#asu">ASU</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-asu-tab" data-bs-toggle="pill" data-bs-target="#pills-asu" type="button" role="tab" aria-controls="pills-asu"  aria-selected="false">ASU</button>
           </li>
-          <li class="nav-item col">
-            <a class="nav-link" data-bs-toggle="pill" href="#assu">ASU</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-sas-tab" data-bs-toggle="pill" data-bs-target="#pills-sas" type="button" role="tab" aria-controls="pills-sas"  aria-selected="false">SAS</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill"  data-bs-target="#pills-uv" type="button" role="tab"  aria-controls="pills-uv" aria-selected="false">UV</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill" data-bs-target="#pills-uv" type="button" role="tab" aria-controls="pills-uv"   aria-selected="false">UV</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-tf-tab" data-bs-toggle="pill"  data-bs-target="#pills-tf" type="button" role="tab"  aria-controls="pills-tf" aria-selected="false">TUBE FORMING</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-tf-tab" data-bs-toggle="pill" data-bs-target="#pills-tf" type="button" role="tab" aria-controls="pills-tf"   aria-selected="false">TF</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-fs-tab" data-bs-toggle="pill"  data-bs-target="#pills-fs" type="button" role="tab"  aria-controls="pills-fs" aria-selected="false">FILLING SYSTEM</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-fs-tab" data-bs-toggle="pill" data-bs-target="#pills-fs" type="button" role="tab" aria-controls="pills-fs"   aria-selected="false">FS</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-su-tab" data-bs-toggle="pill"  data-bs-target="#pills-su" type="button" role="tab"  aria-controls="pills-su" aria-selected="false">SUPER</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-su-tab" data-bs-toggle="pill" data-bs-target="#pills-su" type="button" role="tab" aria-controls="pills-su"   aria-selected="false">SU</button>
           </li>
         </div>
-        <div class="row d-flex flex-row flex-fill align-items-center">
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab"  aria-controls="pills-dimc" aria-selected="false">DIMC</button>
+        <div class="d-flex">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab" aria-controls="pills-dimc"   aria-selected="false">DIMC</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-assu-tab" data-bs-toggle="pill" data-bs-target="#pills-assu" type="button" role="tab"  aria-controls="pills-assu" aria-selected="false">ASSU</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-assu-tab" data-bs-toggle="pill" data-bs-target="#pills-assu" type="button" role="tab" aria-controls="pills-assu"   aria-selected="false">ASSU</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-perox-tab" data-bs-toggle="pill" data-bs-target="#pills-perox" type="button" role="tab"  aria-controls="pills-perox" aria-selected="false">PEROXIDE SYSTEM</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-perox-tab" data-bs-toggle="pill" data-bs-target="#pills-perox" type="button" role="tab" aria-controls="pills-perox"  aria-selected="false">PEROXIDE</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-pf-tab" data-bs-toggle="pill" data-bs-target="#pills-pf" type="button" role="tab"  aria-controls="pills-pf" aria-selected="false">PACKAGE FORMING</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-pf-tab" data-bs-toggle="pill" data-bs-target="#pills-pf" type="button" role="tab" aria-controls="pills-pf"   aria-selected="false">PF</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-ffu-tab" data-bs-toggle="pill" data-bs-target="#pills-ffu" type="button" role="tab"  aria-controls="pills-ffu" aria-selected="false">FFU</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-tf-ffu" data-bs-toggle="pill" data-bs-target="#pills-ffu" type="button" role="tab" aria-controls="pills-ffu"   aria-selected="false">FFU</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-cip-tab" data-bs-toggle="pill" data-bs-target="#pills-cip" type="button" role="tab"  aria-controls="pills-cip" aria-selected="false">CIP</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-fs-cip" data-bs-toggle="pill" data-bs-target="#pills-cip" type="button" role="tab" aria-controls="pills-cip"   aria-selected="false">CIP</button>
           </li>
-          <li class="nav-item col" role="presentation">
-            <button class="nav-link" id="pills-menu-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button" role="tab"  aria-controls="pills-menu" aria-selected="false">MENU</button>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-menu-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu"   aria-selected="false">MENU</button>
           </li>
         </div>
       </ul>
-    </nav>
+    </section>
     <!--Navegador TPOP que solo se vera en mobiles -->
-    <nav class="tpopNavMob">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="tablist" aria-expanded="false">Dropdown</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Home</a></li>
-        <li class="nav-item" role="presentation"><button class="nav-link" id="pills-asu-tab" data-bs-toggle="pill" data-bs-target="#pills-asu" type="button" role="tab" aria-controls="pills-asu" aria-selected="false">ASU</button></li>
-        <li><a class="dropdown-item" href="#">SAS</a></li>
-        <li><a class="dropdown-item" href="#">UV</a></li>
+    <section class="tpopNavMob">
+      <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="tablist" aria-expanded="false"></a>
+        <ul class="dropdown-menu">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">HOME</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-asu-tab" data-bs-toggle="pill" data-bs-target="#pills-asu" type="button" role="tab" aria-controls="pills-asu"  aria-selected="false">ASU</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-sas-tab" data-bs-toggle="pill" data-bs-target="#pills-sas" type="button" role="tab" aria-controls="pills-sas"  aria-selected="false">SAS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill" data-bs-target="#pills-uv" type="button" role="tab" aria-controls="pills-uv"   aria-selected="false">UV</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-tf-tab" data-bs-toggle="pill" data-bs-target="#pills-tf" type="button" role="tab" aria-controls="pills-tf"   aria-selected="false">TF</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-fs-tab" data-bs-toggle="pill" data-bs-target="#pills-fs" type="button" role="tab" aria-controls="pills-fs"   aria-selected="false">FS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-su-tab" data-bs-toggle="pill" data-bs-target="#pills-su" type="button" role="tab" aria-controls="pills-su"   aria-selected="false">SU</button>
+            </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab" aria-controls="pills-dimc"   aria-selected="false">DIMC</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-assu-tab" data-bs-toggle="pill" data-bs-target="#pills-assu" type="button" role="tab" aria-controls="pills-assu"   aria-selected="false">ASSU</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-perox-tab" data-bs-toggle="pill" data-bs-target="#pills-perox" type="button" role="tab" aria-controls="pills-perox"  aria-selected="false">PEROXIDE</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-pf-tab" data-bs-toggle="pill" data-bs-target="#pills-pf" type="button" role="tab" aria-controls="pills-pf"   aria-selected="false">PF</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-tf-ffu" data-bs-toggle="pill" data-bs-target="#pills-ffu" type="button" role="tab" aria-controls="pills-ffu"   aria-selected="false">FFU</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-fs-cip" data-bs-toggle="pill" data-bs-target="#pills-cip" type="button" role="tab" aria-controls="pills-cip"   aria-selected="false">CIP</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-menu-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu"   aria-selected="false">MENU</button>
+          </li>
+        </ul>
       </ul>
     </li>
-    </nav>
+  </section>
       <!-- Areas de trabajo para los distintos modulos -->
         <div class="workArea tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Home</div>
@@ -117,7 +157,7 @@
           </div>
           <div class="tab-pane fade" id="pills-sas" role="tabpanel" aria-labelledby="pills-sas-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="pills-uv" role="tabpanel" aria-labelledby="pills-uv-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="pills-tf" role="tabpanel" aria-labelledby="pills-tf-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="pills-tf" role="tabpanel" aria-labelledby="pills-tf-tab" tabindex="0">TUBE FORMING</div>
           <div class="tab-pane fade" id="pills-fs" role="tabpanel" aria-labelledby="pills-fs-tab" tabindex="0">Prof</div>
           <div class="tab-pane fade" id="pills-su" role="tabpanel" aria-labelledby="pills-su-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="pills-dimc" role="tabpanel" aria-labelledby="pills-dimc-tab" tabindex="0">...</div>
