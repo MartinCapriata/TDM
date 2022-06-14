@@ -6,9 +6,9 @@
 .layout{
     display: grid;
     height: 100vh;
-    background-color: silver;
+    background-color: whitesmoke;
     grid-template-columns:10% repeat(7, 1fr) ;
-    grid-template-rows:repeat(3, 1fr) repeat(3, 15%) ;
+    grid-template-rows:repeat(3, 1fr) repeat(3, 20%) ;
     grid-template-areas:"nav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav"
                         "nav workArea workArea workArea workArea workArea workArea workArea"
                         "nav workArea workArea workArea workArea workArea workArea workArea"
@@ -19,9 +19,11 @@
 
 .navMenu{
     grid-area: nav;
+    justify-content: center;    
+    
 }
 .alarm{
-    grid-area: alarm;   
+    grid-area: alarm;
 }
 .up{
     grid-area: up;
@@ -34,6 +36,27 @@
     padding: 0;
     display: grid;
 }
+.navBarMenu{
+    height: 100%;
+    justify-content: center;
+    align-content: space-between;
+}
+.navBarMenu__btn{
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    
+}
+.navBarMenu__btn .nav-item{
+    margin: 15px;
+    border: 2px black solid;
+}
+.navBarMenu__btn .nav-item:hover{
+    background-color: silver;
+    opacity: 50%;
+    
+}
 .tpopNav .d-flex { 
     flex: 1; 
     justify-content: center; 
@@ -44,30 +67,65 @@
   } 
   .tpopNav .d-flex .nav-item button { 
     height: 100%; 
-    border-radius: 0; 
   } 
 .tpopNavMob{
         display: none;
-    }
+        border-bottom: 1px solid navy;
+}
+.tpopNavMob__img{
+    height: 50px;
+    margin-top: 15px;
+}
+.tpopNavMob .nav{
+    justify-content: center;
+}
 .workArea{
     grid-area: workArea;
-    background-color:antiquewhite ;
-    border-style: solid;
+    
 }
+/* CSS Para los botones de Step UP, Down y Alarm */
 .btn{
+    display: flex;
+    margin: 5px;
+    align-content: center;
+    justify-content: center;
+}
+.btnSteps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.imgSteps:hover{
+    margin: 5px;
+    border: 4px navy solid;
+}
+.imgSteps{
     background: linear-gradient(155deg, white 0%, gray 100%);
+    width: 100%;
+    height: auto;    
 }
 .border{
     border-style: solid;
     border: 1px;
     border-color: black;
 }
-.height{
+/*PANELES TPOP*/
+.card{
+--bs-card-bg: #ffffffd3;
+}
+.card-img-top{
+    margin: 10px;
+    align-self: center;
+    width: 20%;
+}
+.tab-pane{
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-.modules{
-    height: 10%;
-}
+/*Parte Mobile */
 @media screen and (max-width: 576px){
     .layout{
         grid-template-columns: repeat(3, 1fr);
@@ -76,11 +134,35 @@
                             "workArea workArea workArea"
                             "alarm up down";
     }
+    .navMenu{
+        border-bottom: 1px solid navy;
+    }
+    .workArea{
+        width: 100%;
+    }
     .tpopNavMob{
         grid-area: tpopNavMob;
         display: block
-}
+    }
+    .tpopNavMob .dropdown-menu.show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .tpopNav{
         display: none;
     }
+    .alarm{
+        display: flex;
+        align-items: stretch;
+    }
+    .up{
+        display: flex;
+        align-items: stretch;
+    }
+    .down{
+        display: flex;
+        align-items: stretch;
+    }
+
 }

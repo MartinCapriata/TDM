@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="..//css/bootstrap.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,29 @@
 <body>
     <div class="layout">
         <header class="logo">
-            <a href="../index.html"><img class="logo_img" src="../assets/tetra pak logo.png" alt="tetra pak logo"></a>
+            <a href="../index.html"><img class="logo_img" src="../assets/tetra pak logo.svg" alt="tetra pak logo"></a>
         </header>
         <section id="form">
             <h2>Choose the line to connect:</h2>
             <form action="#" method="get">
                 <label for="ip">IP adress:</label>
                 <input type="text" name="ip" id="ip">
-                <input class="btnCon" type="submit" value="Connect">
+                <button type="submit" class="btnCon">Connect</button>
             </form>
         </section>
         <section id="monitor">
             <div class="monitorArea" > Monitor de terminal</div> <!-- aqui luego irá algo como para ver el terminal del windows-->
         </section>
         <footer>
-            <button class="btnMon">Ping</button> <!--boton para hacer ping a la ip-->
-            <button class="btnMon">Scan</button> <!-- boton para hacer un "arp" y escanear la red-->
+            <div class="d-flex justify-content-center" style="width: 100%;">
+                <button class="btnMon">Ping</button> <!--boton para hacer ping a la ip-->
+                <button class="btnMon">Scan</button> <!-- boton para hacer un "arp" y escanear la red-->
+            </div>
+            <div>You need <a href="./pages/help.html">Help</a>?</div>        
+            <!-- Agregado solo para facilitar la navegacion en etapa de protecto-->
+            <div><a href="../index.html">Index</a> -> <a href="./tpopHome.html">TPOP Home</a> / <a href="./report.html">Report</a> </div>
         </footer>
     </div>
+    <script src="..//js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

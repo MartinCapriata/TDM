@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tpopHomeStyles.css">
-    <title>T.D.M. - TPOP - HOME</title>
+    <title>T.D.M. - TPOP</title>
 </head>
 <body>
   <div class="layout">
@@ -15,78 +15,94 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-around" style="height: 100%;" id="collapsibleNavbar">
-        <ul class="navbar-nav flex-column">
+      <div class="collapse navbar-collapse navBarMenu " id="collapsibleNavbar">
+        <ul class="navbar-nav flex-column navBarMenu__btn">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">TPOP</a>
+            <a class="nav-link active" aria-current="page" href="#"><dt>TPOP</dt></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">TOOLS</a>
+            <a class="nav-link" href="#"><dt>TOOLS</dt></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">REPORT</a>
+            <a class="nav-link" href="report.html"><dt>REPORT</dt></a>
           </li>
         </ul>
       </div>
     </nav>
     <!-- Boton de alarma -->
-    <div class="alarm btn">
-      <img src="../assets/iconsTPOP/svg/alarmBtn.svg" class="img-fluid btn" alt="alarm reset button">Reset Alarm
+    <div class="alarm btnSteps">
+      <img src="../assets/iconsTPOP/svg/alarmBtn.svg" class="imgSteps" alt="alarm reset button">
     </div>
     <!-- Boton Step UP -->
-    <div class="up btn">
-      <img src="../assets/iconsTPOP/svg/up.svg" class="img-fluid btn" alt="step down button">Step Up
+    <div class="up btnSteps">
+      <img src="../assets/iconsTPOP/svg/up.svg" class="imgSteps" alt="step down button">
     </div>
     <!-- Boton Step Down -->
-    <div class="down btn">
-      <img src="../assets/iconsTPOP/svg/down.svg" class="img-fluid btn" alt="step down button">Step Down
+    <div class="down btnSteps">
+      <img src="../assets/iconsTPOP/svg/down.svg" class="imgSteps" alt="step down button">
     </div>
     
     <!-- Navegador TPOP para los modulos de la maquina -->
     <section class="container-fluid tpopNav">
       <ul class="nav nav-pills nav-justified d-flex flex-column" id="pills-tab" role="tablist">
+        <!-- Primer Fila -->
         <div class="d-flex">
+          <!-- Boton Home -->
           <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">HOME</button>
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="../assets/iconsTPOP/home.png" alt="icon HOME"> HOME</button>
           </li>
+          <!-- Boton ASU -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-asu-tab" data-bs-toggle="pill" data-bs-target="#pills-asu" type="button" role="tab" aria-controls="pills-asu"  aria-selected="false">ASU</button>
+            <button class="nav-link" id="pills-asu-tab" data-bs-toggle="pill" data-bs-target="#pills-asu" type="button" role="tab" aria-controls="pills-asu"  aria-selected="false"><img src="../assets/iconsTPOP/asu.png" alt="icon asu"> ASU</button>
           </li>
+          <!-- Boton SAS -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-sas-tab" data-bs-toggle="pill" data-bs-target="#pills-sas" type="button" role="tab" aria-controls="pills-sas"  aria-selected="false">SAS</button>
+            <button class="nav-link" id="pills-sas-tab" data-bs-toggle="pill" data-bs-target="#pills-sas" type="button" role="tab" aria-controls="pills-sas"  aria-selected="false"><img src="../assets/iconsTPOP/sterileAirSys.png" alt="icon SAS"> SAS</button>
           </li>
+          <!-- Boton UV -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill" data-bs-target="#pills-uv" type="button" role="tab" aria-controls="pills-uv"   aria-selected="false">UV</button>
+            <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill" data-bs-target="#pills-uv" type="button" role="tab" aria-controls="pills-uv"   aria-selected="false"><img src="../assets/iconsTPOP/uv.png" alt="icon UV"> UV</button>
           </li>
+          <!-- Boton Tube Forming -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-tf-tab" data-bs-toggle="pill" data-bs-target="#pills-tf" type="button" role="tab" aria-controls="pills-tf"   aria-selected="false">TF</button>
+            <button class="nav-link" id="pills-tf-tab" data-bs-toggle="pill" data-bs-target="#pills-tf" type="button" role="tab" aria-controls="pills-tf"   aria-selected="false"><img src="../assets/iconsTPOP/formingUnit.png" alt="icon TF"> TF</button>
           </li>
+          <!-- Boton Filling System -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-fs-tab" data-bs-toggle="pill" data-bs-target="#pills-fs" type="button" role="tab" aria-controls="pills-fs"   aria-selected="false">FS</button>
+            <button class="nav-link" id="pills-fs-tab" data-bs-toggle="pill" data-bs-target="#pills-fs" type="button" role="tab" aria-controls="pills-fs" aria-selected="false"><img src="../assets/iconsTPOP/fillingSys.png" alt="icon FS"> FS</button>
           </li>
+          <!-- Boton Service Unit -->  
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-su-tab" data-bs-toggle="pill" data-bs-target="#pills-su" type="button" role="tab" aria-controls="pills-su"   aria-selected="false">SU</button>
+            <button class="nav-link" id="pills-su-tab" data-bs-toggle="pill" data-bs-target="#pills-su" type="button" role="tab" aria-controls="pills-su" aria-selected="false"><img src="../assets/iconsTPOP/serviceKey.png" alt="icon FS"> SU</button>
           </li>
         </div>
+        <!-- Segunda Fila -->
         <div class="d-flex">
+          <!-- Boton DIMC -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab" aria-controls="pills-dimc"   aria-selected="false">DIMC</button>
+            <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab" aria-controls="pills-dimc"   aria-selected="false"><img src="../assets/iconsTPOP/dimc.png" alt="icon DIMC"> DIMC</button>
           </li>
+          <!-- Boton ASSU -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-assu-tab" data-bs-toggle="pill" data-bs-target="#pills-assu" type="button" role="tab" aria-controls="pills-assu"   aria-selected="false">ASSU</button>
+            <button class="nav-link" id="pills-assu-tab" data-bs-toggle="pill" data-bs-target="#pills-assu" type="button" role="tab" aria-controls="pills-assu"   aria-selected="false"><img src="../assets/iconsTPOP/assu.png" alt="icon ASSU"> ASSU</button>
           </li>
+          <!-- Boton Peroxide -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-perox-tab" data-bs-toggle="pill" data-bs-target="#pills-perox" type="button" role="tab" aria-controls="pills-perox"  aria-selected="false">PEROXIDE</button>
+            <button class="nav-link" id="pills-perox-tab" data-bs-toggle="pill" data-bs-target="#pills-perox" type="button" role="tab" aria-controls="pills-perox"  aria-selected="false"><img src="../assets/iconsTPOP/perox.png" alt="icon SAS"> PEROXIDE</button>
           </li>
+          <!-- Boton Package Forming -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-pf-tab" data-bs-toggle="pill" data-bs-target="#pills-pf" type="button" role="tab" aria-controls="pills-pf"   aria-selected="false">PF</button>
+            <button class="nav-link" id="pills-pf-tab" data-bs-toggle="pill" data-bs-target="#pills-pf" type="button" role="tab" aria-controls="pills-pf" aria-selected="false"><img src="../assets/iconsTPOP/jawSys.bmp" alt="icon PF"> PF</button>
           </li>
+          <!-- Boton Final Folder Unit -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-tf-ffu" data-bs-toggle="pill" data-bs-target="#pills-ffu" type="button" role="tab" aria-controls="pills-ffu"   aria-selected="false">FFU</button>
+            <button class="nav-link" id="pills-tf-ffu" data-bs-toggle="pill" data-bs-target="#pills-ffu" type="button" role="tab" aria-controls="pills-ffu" aria-selected="false"><img src="../assets/iconsTPOP/ffu.png" alt="icon FFU"> FFU</button>
           </li>
+          <!-- Boton CIP -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-fs-cip" data-bs-toggle="pill" data-bs-target="#pills-cip" type="button" role="tab" aria-controls="pills-cip"   aria-selected="false">CIP</button>
+            <button class="nav-link" id="pills-fs-cip" data-bs-toggle="pill" data-bs-target="#pills-cip" type="button" role="tab" aria-controls="pills-cip" aria-selected="false"><img src="../assets/iconsTPOP/cip.png" alt="icon CIP"> CIP</button>
           </li>
+          <!-- Boton Menu -->
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-menu-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu"   aria-selected="false">MENU</button>
           </li>
@@ -97,31 +113,38 @@
     <section class="tpopNavMob">
       <ul class="nav nav-pills">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="tablist" aria-expanded="false"></a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="tablist" aria-expanded="false"><img src="../assets/iconsTPOP/tpop.bmp" class="tpopNavMob__img" alt="logo tpop"></a>
         <ul class="dropdown-menu">
+            <!-- Boton para Home -->
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">HOME</button>
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="../assets/iconsTPOP/home.png" alt="icon home"> HOME</button>
             </li>
+            <!-- Boton para ASU -->
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-asu-tab" data-bs-toggle="pill" data-bs-target="#pills-asu" type="button" role="tab" aria-controls="pills-asu"  aria-selected="false">ASU</button>
+              <button class="nav-link" id="pills-asu-tab" data-bs-toggle="pill" data-bs-target="#pills-asu" type="button" role="tab" aria-controls="pills-asu" aria-selected="false"><img src="../assets/iconsTPOP/asu.png" alt="icon ASU"> ASU</button>
             </li>
+            <!-- Boton para Sterile Air System -->
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-sas-tab" data-bs-toggle="pill" data-bs-target="#pills-sas" type="button" role="tab" aria-controls="pills-sas"  aria-selected="false">SAS</button>
+              <button class="nav-link" id="pills-sas-tab" data-bs-toggle="pill" data-bs-target="#pills-sas" type="button" role="tab" aria-controls="pills-sas" aria-selected="false"><img src="../assets/iconsTPOP/sterileAirSys.png" alt="icon SAS"> SAS</button>
             </li>
+            <!-- Boton para UV -->
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill" data-bs-target="#pills-uv" type="button" role="tab" aria-controls="pills-uv"   aria-selected="false">UV</button>
+              <button class="nav-link" id="pills-uv-tab" data-bs-toggle="pill" data-bs-target="#pills-uv" type="button" role="tab" aria-controls="pills-uv" aria-selected="false"><img src="../assets/iconsTPOP/uv.png" alt="icon FS"> UV</button>
             </li>
+            <!-- Boton para Filling System -->
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-tf-tab" data-bs-toggle="pill" data-bs-target="#pills-tf" type="button" role="tab" aria-controls="pills-tf"   aria-selected="false">TF</button>
+              <button class="nav-link" id="pills-tf-tab" data-bs-toggle="pill" data-bs-target="#pills-tf" type="button" role="tab" aria-controls="pills-tf" aria-selected="false"><img src="../assets/iconsTPOP/formingUnit.png" alt="icon TF"> TF</button>
             </li>
+            <!-- Boton para Filling System -->
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-fs-tab" data-bs-toggle="pill" data-bs-target="#pills-fs" type="button" role="tab" aria-controls="pills-fs"   aria-selected="false">FS</button>
+              <button class="nav-link" id="pills-fs-tab" data-bs-toggle="pill" data-bs-target="#pills-fs" type="button" role="tab" aria-controls="pills-fs" aria-selected="false"><img src="../assets/iconsTPOP/fillingSys.png" alt="icon FS"> FS</button>
             </li>
+            <!-- Boton para Service Unit -->
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-su-tab" data-bs-toggle="pill" data-bs-target="#pills-su" type="button" role="tab" aria-controls="pills-su"   aria-selected="false">SU</button>
+              <button class="nav-link" id="pills-su-tab" data-bs-toggle="pill" data-bs-target="#pills-su" type="button" role="tab" aria-controls="pills-su" aria-selected="false"><img src="../assets/iconsTPOP/serviceKey.png" alt="icon SU"> SU</button>
             </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab" aria-controls="pills-dimc"   aria-selected="false">DIMC</button>
+            <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab" aria-controls="pills-dimc" aria-selected="false">DIMC</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-assu-tab" data-bs-toggle="pill" data-bs-target="#pills-assu" type="button" role="tab" aria-controls="pills-assu"   aria-selected="false">ASSU</button>
@@ -146,26 +169,93 @@
     </li>
   </section>
       <!-- Areas de trabajo para los distintos modulos -->
-        <div class="workArea tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Home</div>
-          <!--Pagina para ASU -->
-          <div  id="asu" class="tab-pane fade">
-            <div class="row">
-            PAGINA ASU  
+        <div class="workArea tab-content overflow-auto" id="pills-tabContent">
+          <!--Pagina para Home -->
+          <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" style="background-image: url(../assets/a3-speed.png);">
+            <div class="row g-5">
+              <div class="col-6 col-sm-4">
+                <!-- Recipe card -->
+                <div class="card">
+                  <img class="card-img-top" src="../assets/iconsTPOP/recipe.png" alt="recipe image">
+                  <div class="card-body">
+                    <h4 class="card-title">Recipe</h4>
+                    <p class="card-text">Recipe choose:</p>
+                    <p>Aqui iria el nombre de la receta</p>
+                    <p class="card-text">Machine Capacity:</p>
+                    <p>Aqui iria la velocidad de la maquina</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <!-- Machine number Card -->
+                <div class="card">
+                  <img class="card-img-top" src="../assets/iconsTPOP/recipe.png" alt="recipe image">
+                  <div class="card-body">
+                    <h4 class="card-title">Machine number</h4>
+                    <p class="card-text">Recipe choose:</p>
+                    <p>Aqui iria el nombre de la receta</p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-6 col-sm-4">
+                <!-- Preapplicator card -->
+                <div class="card">
+                  <img class="card-img-top" src="../assets/iconsTPOP/recipe.png" alt="recipe image">
+                  <div class="card-body">
+                    <h4 class="card-title">Pre applicator</h4>
+                    <p class="card-text">Preapplicator type:</p>
+                    <p>Aqui iria el tipo de preapp</p>
+                    <p class="card-text">Openning:</p>
+                    <p>Aqui iria el tipo de apertura</p>
+                  </div>
+                </div>
+              </div>  
+                <div class="col-6 col-sm-4">
+                  <!-- Software version card -->
+                  <div class="card">
+                    <img class="card-img-top" src="../assets/iconsTPOP/softs.png" alt="recipe image">
+                    <div class="card-body">
+                      <h4 class="card-title">Software Version</h4>
+                      <p class="card-text">Preapplicator type:</p>
+                      <p>Aqui iria el tipo de preapp</p>
+                      <p class="card-text">Openning:</p>
+                      <p>Aqui iria el tipo de apertura</p>
+                    </div>
+                  </div>  
+                </div>
             </div>
-            
+          </div> 
+          <!--Pagina para ASU -->
+          <div class="tab-pane fade" id="pills-asu" role="tabpanel" aria-labelledby="pills-asu-tab" tabindex="0" style="background-image: url(../assets/asu.png);">
+            <div class="row">
+              ASU
+              
+            </div>  
           </div>
+          
+          <!-- Pagina para SAS -->
           <div class="tab-pane fade" id="pills-sas" role="tabpanel" aria-labelledby="pills-sas-tab" tabindex="0">...</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-uv" role="tabpanel" aria-labelledby="pills-uv-tab" tabindex="0">...</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-tf" role="tabpanel" aria-labelledby="pills-tf-tab" tabindex="0">TUBE FORMING</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-fs" role="tabpanel" aria-labelledby="pills-fs-tab" tabindex="0">Prof</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-su" role="tabpanel" aria-labelledby="pills-su-tab" tabindex="0">...</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-dimc" role="tabpanel" aria-labelledby="pills-dimc-tab" tabindex="0">...</div>
-          <div class="workArea tab-pane fade" id="pills-assu" role="tabpanel" aria-labelledby="pills-assu-tab" tabindex="0"><iframe src="../pages/tpop/assu.html" height="100%" width="100%"></iframe></div>
+          <!-- Pagina para ASU -->
+          <div class="tab-pane fade" id="pills-assu" role="tabpanel" aria-labelledby="pills-assu-tab" tabindex="0"></div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-perox" role="tabpanel" aria-labelledby="pills-perox-tab" tabindex="0">...</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-pf" role="tabpanel" aria-labelledby="pills-pf-tab" tabindex="0">...</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-ffu" role="tabpanel" aria-labelledby="pills-ffu-tab" tabindex="0">...</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-cip" role="tabpanel" aria-labelledby="pills-cip-tab" tabindex="0">...</div>
+          <!-- Pagina para ASU -->
           <div class="tab-pane fade" id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab" tabindex="0">...</div>
         </div>
  

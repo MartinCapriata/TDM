@@ -5,7 +5,7 @@
 .home{
     display:grid;
     height: 100vh;
-    background-color:silver ;
+    background-color:whitesmoke ;
     grid-template-columns: auto;
     grid-template-rows: 25% 25% auto 75px;
     grid-template-areas:"logo"
@@ -20,6 +20,11 @@ grid-area: logo;
 }
 section#pictures{
     grid-area: pictures;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
 }
 section#form{
     grid-area: form;
@@ -27,14 +32,14 @@ section#form{
 }
 footer{
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 .logo{
     display: flex;
     justify-content: center;
-}
-.machines{
-    display: flex;
-    justify-content: space-around;
 }
 .form_subtitle{
     text-align: center;
@@ -47,10 +52,10 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 576px){
     .home{
+        grid-template-rows: 50% 40% 10%;
         grid-template-areas:"logo"
-                            "pictures"
                             "form"
                             "footer";
     }    
