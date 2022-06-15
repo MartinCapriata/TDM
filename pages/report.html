@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="..//css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reportStyles.css">
+    <title>T.D.M. - REPORT</title>
+</head>
+<body><div class="layout">
+    <header>
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="tpopHome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="report.html">Report</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="tools.html">Tools</a>
+                    </li>
+                  </ul>
+                </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <!-- Tabla para fecha, hora y técnico -->
+        <table class="table container table-bordered border-black">
+            <tbody>
+                <tr>
+                    <th scope="row"> Date</th>
+                    <td>"fecha"</td>
+                    <td>"hora"</td>
+                </tr>
+                <tr>
+                    <th scope="row">Issuer</th>
+                    <td colspan="2"><input type="text" name="nameIssuer" id="nameIssuer"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- Tabla info cliente y maquina -->
+        <table class="table container table-bordered border-black">
+            <tbody>
+                <tr>
+                    <th scope="row">Customer</th>
+                    <td colspan="2"><input type="text" name="nameCustomer" id="nameCustomer"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Customer site</th>
+                    <td colspan="2"><input type="text" name="customerSite" id="customerSite"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Customer country</th>
+                    <td colspan="2"><input type="text" name="customerCountry" id="customerCountry"></td>
+                </tr>
+                <tr>
+                    <th scope="row"> Line name</th>
+                    <td colspan="2"><input type="text" name="nameLine" id="nameLine"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Product</th>
+                    <td colspan="2"><input type="text" name="nameProduct" id="nameProduct"></td>
+                </tr>      
+                <tr>
+                    <th scope="row" rowspan="4" class="align-middle">A3 Speed</th>
+                    <td>Serial number</td>
+                    <td> "Numero de maquina"</td>
+                    <tr>
+                        <td>Running hours</td>
+                        <td><input type="number" name="hoursMachine" id="hoursMachine"></td>
+                    </tr>
+                    <tr>
+                        <td>Software version</td>
+                        <td>"version de soft"</td>
+                    </tr>
+                    <tr>
+                        <td>Development version</td>
+                        <td>"version de desarrollo"</td>
+                    </tr>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2" class="align-middle">Pre applicator</th>
+                    <td>Serial number</td>
+                    <td><input type="number" name="hoursMachine" id="hoursMachine"></td>
+                    <tr>
+                        <td>Software version</td>
+                        <td>"version de soft"</td>
+                    </tr>
+                </tr>          
+            </tbody>
+        </table>
+        <br>
+        <!-- Tabla con info de receta -->
+        <table class="table container table-bordered border-black">
+            <tbody>                
+                <tr>
+                    <th colspan="2">Recipe</th>
+                </tr>
+                <tr>
+                    <th>Machine number</th>
+                    <td class="text-center">"numero"</td>
+                </tr>
+                <tr>
+                    <th>Volume</th>
+                    <td class="text-center">"volumen"</td>
+                </tr>
+                <tr>
+                    <th>Preapplicator Installed</th>
+                    <td class="text-center">"preaplicador"</td>
+                </tr>
+                <tr>
+                    <th>Opening</th>
+                    <td class="text-center">"abertura"</td>
+                </tr>
+                <tr>
+                    <th>Capacity</th>
+                    <td class="text-center">"capacidad"</td>
+                </tr>
+                <tr>
+                    <th>Package Length</th>
+                    <td class="text-center">"largo de envase"</td>
+                </tr>
+                <tr>
+                    <th>Package width</th>
+                    <td class="text-center">"ancho de envase"</td>
+                </tr>
+                <tr>
+                    <th>MDR</th>
+                    <td class="text-center">"mdr"</td>
+                </tr>
+                <tr>
+                    <th>Step of the machine</th>
+                    <td class="text-center">"step"</td>
+                </tr>
+                <tr>
+                    <th>Recipe loaded</th>
+                    <td class="text-center">"receta"</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Tabla para comentarios -->
+        <table class="table container table-bordered border-black">
+            <tbody>
+                <tr>
+                    <th>Comments</th>
+                </tr>
+                <tr>
+                    <td class="d-flex justify-content-center">
+                        <textarea name="comentsArea" id="comentsArea" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Tabla para Tube Forming Uni Window -->
+        <table class="table container table-bordered border-black">
+            <tbody>
+                <tr>
+                    <th>Tube Forming Unit Window</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <th>Pendulum roller, pressure</th>
+                    <td class="text-center">"valor"</td>
+                </tr>
+                <tr>
+                    <th>Longitudinal Sealing, Power During Production</th>
+                    <td class="text-center">"valor"</td>
+                </tr>
+                <tr>
+                    <th>Longitudinal Sealing, Power During Tube Sealing</th>
+                    <td class="text-center">"valor"</td>
+                </tr>
+                <tr>
+                    <th>Longitudinal Sealing, Power During Service</th>
+                    <td class="text-center">"valor"</td>
+                </tr>
+                <tr>
+                    <th>Longitudinal Sealing, Impedance</th>
+                    <td class="text-center">"valor"</td>
+                </tr>
+                <tr>
+                    <th>Longitudinal Sealing, Phase</th>
+                    <td class="text-center">"valor"</td>
+                </tr>
+                <tr>
+                    <th>Longitudinal Sealing, Frequency</th>
+                    <td class="text-center">"valor"</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <!-- Agregado solo para facilitar la navegacion en etapa de protecto-->
+        <div><a href="../index.html">Index</a> -> <a href="connect.html">Connect</a> -> <a href="tpopHome.html">TPOP Home</a></div>
+    </footer>
+<script src="..//js/bootstrap.bundle.min.js"></script>    
+</div></body>
+</html>

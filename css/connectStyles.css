@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .layout{
     display: grid;
     height: 100vh;
-    background-color: silver;
+    background-color: whitesmoke;
     grid-template-columns: auto;
-    grid-template-rows: 35% auto auto 75px;
+    grid-template-rows: 35% auto 5fr 1fr;
     grid-template-areas:"logo"
                         "form"
                         "monitor"
@@ -37,8 +38,9 @@ section#monitor{
 footer{    
     grid-area: footer;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     width: 100%;
 }
 .logo_img{
@@ -54,13 +56,19 @@ h2{
     background-color: white;
     height: 70%;
     width: 70%;
+    border: 1px solid black;
 }
 .btnMon{
     width: 25%;
+    height: auto;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 }
-@media screen and (max-width: 450px){
+button:hover{
+    background-color: silver;
+    border: 2px solid black;
+}
+@media screen and (max-width: 576px){
     .monitorArea{
         justify-items: center;
         width: 95%;
