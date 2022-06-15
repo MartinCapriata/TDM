@@ -12,36 +12,34 @@
   <div class="layout">
     <!-- Navegador TPOP/Tools/Reportes -->
     <nav class="navMenu navbar navbar-expand-sm">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navBarMenu " id="collapsibleNavbar">
-        <ul class="navbar-nav flex-column navBarMenu__btn">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><dt>TPOP</dt></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><dt>TOOLS</dt></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="report.html"><dt>REPORT</dt></a>
-          </li>
-        </ul>
+      <div class="container-fluid navBarMenu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><dt>TPOP</dt></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><dt>TOOLS</dt></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="report.html"><dt>REPORT</dt></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+    <!-- Navegador Steps -->
+    <nav class="navSteps">
     <!-- Boton de alarma -->
-    <div class="alarm btnSteps">
-      <img src="../assets/iconsTPOP/svg/alarmBtn.svg" class="imgSteps" alt="alarm reset button">
-    </div>
-    <!-- Boton Step UP -->
-    <div class="up btnSteps">
-      <img src="../assets/iconsTPOP/svg/up.svg" class="imgSteps" alt="step down button">
-    </div>
-    <!-- Boton Step Down -->
-    <div class="down btnSteps">
-      <img src="../assets/iconsTPOP/svg/down.svg" class="imgSteps" alt="step down button">
-    </div>
-    
+      <button class="btnSteps"><img src="../assets/iconsTPOP/svg/alarmBtn.svg" class="imgSteps" alt="alarmreset button"></button>
+      <!-- Boton Step UP -->
+      <button class="btnSteps"><img src="../assets/iconsTPOP/svg/up.svg" class="imgSteps" alt="step   upbutton"></button>
+      <!-- Boton Step Down -->
+      <button class="btnSteps"><img src="../assets/iconsTPOP/svg/down.svg" class="imgSteps" alt="step down  button"></button>
+    </nav>
     <!-- Navegador TPOP para los modulos de la maquina -->
     <section class="container-fluid tpopNav">
       <ul class="nav nav-pills nav-justified d-flex flex-column" id="pills-tab" role="tablist">
@@ -169,7 +167,7 @@
     </li>
   </section>
       <!-- Areas de trabajo para los distintos modulos -->
-        <div class="workArea tab-content overflow-auto" id="pills-tabContent">
+        <div class="workArea container-fluid tab-content overflow-auto" id="pills-tabContent">
           <!--Pagina para Home -->
           <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" style="background-image: url(../assets/a3-speed.png);">
             <div class="row g-5">
@@ -192,8 +190,8 @@
                   <img class="card-img-top" src="../assets/iconsTPOP/recipe.png" alt="recipe image">
                   <div class="card-body">
                     <h4 class="card-title">Machine number</h4>
-                    <p class="card-text">Recipe choose:</p>
-                    <p>Aqui iria el nombre de la receta</p>
+                    <p class="card-text">Serial number:</p>
+                    <p>"numero"</p>
                   </div>
                 </div>
               </div>
@@ -204,9 +202,9 @@
                   <div class="card-body">
                     <h4 class="card-title">Pre applicator</h4>
                     <p class="card-text">Preapplicator type:</p>
-                    <p>Aqui iria el tipo de preapp</p>
+                    <p>"preapp""</p>
                     <p class="card-text">Openning:</p>
-                    <p>Aqui iria el tipo de apertura</p>
+                    <p>"apertura"</p>
                   </div>
                 </div>
               </div>  
@@ -216,10 +214,10 @@
                     <img class="card-img-top" src="../assets/iconsTPOP/softs.png" alt="recipe image">
                     <div class="card-body">
                       <h4 class="card-title">Software Version</h4>
-                      <p class="card-text">Preapplicator type:</p>
-                      <p>Aqui iria el tipo de preapp</p>
-                      <p class="card-text">Openning:</p>
-                      <p>Aqui iria el tipo de apertura</p>
+                      <p class="card-text">Software:</p>
+                      <p>"number"</p>
+                      <p class="card-text">HMI Soft:</p>
+                      <p>"number"</p>
                     </div>
                   </div>  
                 </div>
