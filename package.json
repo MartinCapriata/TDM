@@ -1,0 +1,29 @@
+{
+  "name": "hdm--capriata",
+  "version": "1.0.0",
+  "description": "paquete SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-cssConect": "node-sass --include-path scss sass/connectStyles.scss css/connectStyles.css",
+    "build-cssHelp": "node-sass --include-path scss sass/helpStyles.scss css/helpStyles.css",
+    "build-cssHome": "node-sass --include-path scss sass/homeLoginStyles.scss css/homeLoginStyles.css",
+    "build-cssReport": "node-sass --include-path scss sass/reportLoginStyles.scss css/reportLoginStyles.css",
+    "build-cssTpop": "node-sass --include-path scss sass/tpopHomeLoginStyles.scss css/tpopHomeLoginStyles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-cssConnect -cssHelp -cssHome -cssReport -cssTpop\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinCapriata/TDM.git"
+  },
+  "author": "Martin Capriata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinCapriata/TDM/issues"
+  },
+  "homepage": "https://github.com/MartinCapriata/TDM#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

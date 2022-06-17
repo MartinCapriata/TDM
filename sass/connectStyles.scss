@@ -1,0 +1,78 @@
+@import "./parciales/reset";
+
+.layout{
+    display: grid;
+    height: 100vh;
+    background-color: whitesmoke;
+    grid-template-columns: auto;
+    grid-template-rows: 35% auto 5fr 1fr;
+    grid-template-areas:"logo"
+                        "form"
+                        "monitor"
+                        "footer";
+}
+header{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+section#form{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+section#monitor{
+    grid-area: monitor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer{    
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo_img{
+    height: 100%;
+}
+h2{
+    margin-bottom: 2%;
+}
+.btnCon{
+    padding: 5px 10px;
+}
+.monitorArea{
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    border: 1px solid black;
+}
+.btnMon{
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+button:hover{
+    background-color: silver;
+    border: 2px solid black;
+}
+@media screen and (max-width: 576px){
+    .monitorArea{
+        justify-items: center;
+        width: 95%;
+        height: 90%;
+    }
+    .btnMon{
+        width: 45%;
+        margin: 5px;
+    }
+}

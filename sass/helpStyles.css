@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: whitesmoke;
+  background-image: url("../assets/tetra pak logo.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
+
+p {
+  margin: 2rem;
+}/*# sourceMappingURL=helpStyles.css.map */

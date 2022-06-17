@@ -1,0 +1,6 @@
+"build-css": "node-sass --include-path scss sass/connectStyles.scss css/connectStyles.css",
+"build-css": "node-sass --include-path scss sass/helpStyles.scss css/helpStyles.css",
+"build-css": "node-sass --include-path scss sass/homeLoginStyles.scss css/homeLoginStyles.css",
+"build-css": "node-sass --include-path scss sass/reportLoginStyles.scss css/reportLoginStyles.css",
+"build-css": "node-sass --include-path scss sass/tpopHomeLoginStyles.scss css/tpopHomeLoginStyles.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
