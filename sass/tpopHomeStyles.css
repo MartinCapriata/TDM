@@ -34,28 +34,28 @@
   padding: 0;
   display: grid;
 }
+.tpopNav.d-flex {
+  flex: 1;
+  justify-content: center;
+}
+.tpopNav.d-flex .nav-item {
+  align-items: center;
+  display: flex;
+}
+.tpopNav.d-flex .nav-item button {
+  height: 100%;
+}
 
 .workArea {
   grid-area: workArea;
 }
 
-.tpopNav .d-flex {
-  flex: 1;
-  justify-content: center;
-}
-
-.tpopNav .d-flex .nav-item {
-  align-items: center;
-  display: flex;
-}
-
-.tpopNav .d-flex .nav-item button {
-  height: 100%;
-}
-
 .tpopNavMob {
   display: none;
   border-bottom: 1px solid navy;
+}
+.tpopNavMob .nav {
+  justify-content: center;
 }
 
 .tpopNavMob__img {
@@ -63,13 +63,12 @@
   margin-top: 15px;
 }
 
-.tpopNavMob .nav {
-  justify-content: center;
-}
-
 /* CSS Para el navegador TPOP/ TOOLS / Report */
 .navBarMenu {
   height: 100%;
+}
+.navBarMenu .nav-link {
+  padding: 40px 0 40px 0;
 }
 
 .navbar-collapse {
@@ -80,18 +79,8 @@
   text-align: center;
   background-color: whitesmoke;
 }
-
 .navbar-collapse .nav-link:hover {
   background-color: rgb(200, 200, 200);
-  border-radius: 20px;
-}
-
-.navBarMenu .nav-link {
-  padding: 40px 0 40px 0;
-}
-
-.navbar-nav .nav-link.active {
-  background-color: rgba(0, 0, 255, 0.5);
   border-radius: 20px;
 }
 
@@ -100,13 +89,16 @@
   width: 100%;
   height: 100%;
 }
+.navbar-nav .nav-link.active {
+  background-color: rgba(0, 0, 255, 0.5);
+  border-radius: 20px;
+}
 
 /* CSS Para el navegador modulos TPOP*/
 .nav-pills .nav-link:hover {
   background-color: rgb(200, 200, 200);
   border-radius: 20px;
 }
-
 .nav-pills .nav-link.active {
   background-color: rgba(0, 0, 255, 0.5);
   border-radius: 20px;
@@ -115,19 +107,18 @@
 /* CSS Para los botones de Step UP, Down y Alarm */
 .btn {
   display: flex;
-  margin: 5px;
-  align-content: center;
   justify-content: center;
-}
-
-.imgSteps:hover {
-  border: 4px navy solid;
+  align-items: center;
+  margin: 5px;
 }
 
 .imgSteps {
   background: linear-gradient(155deg, white 0%, gray 100%);
-  height: 100%;
   width: 100%;
+  height: 100%;
+}
+.imgSteps:hover {
+  border: 4px navy solid;
 }
 
 .border {
@@ -174,7 +165,6 @@
     grid-area: tpopNavMob;
     display: block;
   }
-
   .tpopNavMob .dropdown-menu.show {
     display: flex;
     flex-direction: column;

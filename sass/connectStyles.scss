@@ -1,4 +1,9 @@
 @import "./parciales/reset";
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .layout{
     display: grid;
@@ -13,31 +18,23 @@
 }
 header{
     grid-area: logo;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+    @include centrado;
 }
 section#form{
     grid-area: form;
-    display: flex;
+    @include centrado;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 section#monitor{
     grid-area: monitor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centrado;
     width: 100%;
 }
 footer{    
     grid-area: footer;
-    display: flex;
+    @include centrado;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 .logo_img{

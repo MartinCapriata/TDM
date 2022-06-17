@@ -17,15 +17,15 @@ header {
   grid-area: logo;
   display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
 }
 
 section#form {
   grid-area: form;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -40,9 +40,9 @@ section#monitor {
 footer {
   grid-area: footer;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 
