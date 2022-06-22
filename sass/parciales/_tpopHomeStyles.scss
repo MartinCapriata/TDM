@@ -1,18 +1,11 @@
-@import "./parciales/reset";
-@mixin centrado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 @mixin sizes($width,$height) {
     width: $width;
     height: $height;
 }
 
-.layout{
-    display: grid;
-    height: 100vh;
-    background-color: whitesmoke;
+.layout--tpop{
+    @extend .layout;
     grid-template-columns:10% repeat(7, 1fr) ;
     grid-template-rows:repeat(3, 1fr) repeat(3, 20%) ;
     grid-template-areas:"nav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav"
@@ -105,7 +98,7 @@
 }    
 /* CSS Para los botones de Step UP, Down y Alarm */
 .btn{
-    @include centrado;
+    @extend .centrado;
     margin: 5px;
 }
 .imgSteps{
@@ -131,13 +124,12 @@
 }
 .tab-pane{
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    @extend .bg--centrado;
 }
 /*Parte Mobile */
 @media screen and (max-width: 576px){
-    .layout{
+    .layout--tpop{
+        @extend .layout;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 10% 80% 10%;
         grid-template-areas:"nav tpopNavMob tpopNavMob"

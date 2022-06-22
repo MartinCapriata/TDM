@@ -1,0 +1,23 @@
+@import "./parciales/reset";
+
+.layout{
+    display: grid;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg--centrado{
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@import "./parciales/tpopHomeStyles";
+@import "./parciales/homeLoginStyles";
+@import "./parciales/connectStyles";
+@import "./parciales/helpStyles";
+@import "./parciales/reportStyles";

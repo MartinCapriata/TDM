@@ -1,9 +1,5 @@
-@import "./parciales/reset";
-
-.home{
-    display:grid;
-    height: 100vh;
-    background-color:whitesmoke ;
+.layout--home{
+    @extend .layout;
     grid-template-columns: auto;
     grid-template-rows: 25% 25% auto 75px;
     grid-template-areas:"logo"
@@ -13,10 +9,12 @@
 }
 
 
-header{
-grid-area: logo;
+.header--home{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
 }
-section#pictures{
+.pictures--home{
     grid-area: pictures;
     width: 100%;
     height: auto;
@@ -24,20 +22,16 @@ section#pictures{
     justify-content: space-around;
 
 }
-section#form{
+.form--home{
     grid-area: form;
     justify-self: center;
 }
-footer{
+.footer--home{
     grid-area: footer;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-}
-.logo{
-    display: flex;
-    justify-content: center;
 }
 .form_subtitle{
     text-align: center;
@@ -51,13 +45,13 @@ footer{
 }
 
 @media screen and (max-width: 576px){
-    .home{
+    .layout--home{
         grid-template-rows: 50% 40% 10%;
         grid-template-areas:"logo"
                             "form"
                             "footer";
     }    
-    section#pictures{
+    .pictures--home{
         display: none;
     }
 }

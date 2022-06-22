@@ -1,14 +1,5 @@
-@import "./parciales/reset";
-@mixin centrado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.layout{
-    display: grid;
-    height: 100vh;
-    background-color: whitesmoke;
+.layout--connect{
+    @extend .layout;
     grid-template-columns: auto;
     grid-template-rows: 35% auto 5fr 1fr;
     grid-template-areas:"logo"
@@ -16,32 +7,35 @@
                         "monitor"
                         "footer";
 }
-header{
+.header--connect{
     grid-area: logo;
-    @include centrado;
+    @extend .centrado;
+    & a{
+        height: 100%
+    }
+    & .logo_img{
+        height: 100%;
+    }
 }
-section#form{
+.form--connect{
     grid-area: form;
-    @include centrado;
+    @extend .centrado;
     flex-direction: column;
     width: 100%;
+    & h2{
+        margin-bottom: 2%;
+    }
 }
-section#monitor{
+.monitor--connect{
     grid-area: monitor;
-    @include centrado;
+    @extend .centrado;
     width: 100%;
 }
-footer{    
+.footer--connect{    
     grid-area: footer;
-    @include centrado;
+    @extend .centrado;
     flex-direction: column;
     width: 100%;
-}
-.logo_img{
-    height: 100%;
-}
-h2{
-    margin-bottom: 2%;
 }
 .btnCon{
     padding: 5px 10px;

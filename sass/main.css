@@ -4,10 +4,25 @@
   box-sizing: border-box;
 }
 
-.layout {
+.layout, .layout--report, .layout--help, .layout--connect, .layout--home, .layout--tpop {
   display: grid;
   height: 100vh;
   background-color: whitesmoke;
+}
+
+.centrado, .footer--connect, .monitor--connect, .form--connect, .header--connect, .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg--centrado, .layout--help, .tab-pane {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.layout--tpop {
   grid-template-columns: 10% repeat(7, 1fr);
   grid-template-rows: repeat(3, 1fr) repeat(3, 20%);
   grid-template-areas: "nav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav" "nav workArea workArea workArea workArea workArea workArea workArea" "nav workArea workArea workArea workArea workArea workArea workArea" "navSteps workArea workArea workArea workArea workArea workArea workArea" "navSteps workArea workArea workArea workArea workArea workArea workArea" "navSteps workArea workArea workArea workArea workArea workArea workArea";
@@ -106,9 +121,6 @@
 
 /* CSS Para los botones de Step UP, Down y Alarm */
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 5px;
 }
 
@@ -140,14 +152,11 @@
 
 .tab-pane {
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 /*Parte Mobile */
 @media screen and (max-width: 576px) {
-  .layout {
+  .layout--tpop {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 10% 80% 10%;
     grid-template-areas: "nav tpopNavMob tpopNavMob" "workArea workArea workArea" "navSteps navSteps navSteps";
@@ -197,4 +206,179 @@
   .btnSteps {
     height: 100%;
   }
-}/*# sourceMappingURL=tpopHomeStyles.css.map */
+}
+.layout--home {
+  grid-template-columns: auto;
+  grid-template-rows: 25% 25% auto 75px;
+  grid-template-areas: "logo" "pictures" "form" "footer";
+}
+
+.header--home {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+}
+
+.pictures--home {
+  grid-area: pictures;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form--home {
+  grid-area: form;
+  justify-self: center;
+}
+
+.footer--home {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.form_subtitle {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.form_text {
+  margin: 1rem;
+}
+
+.form_btn {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .layout--home {
+    grid-template-rows: 50% 40% 10%;
+    grid-template-areas: "logo" "form" "footer";
+  }
+
+  .pictures--home {
+    display: none;
+  }
+}
+.layout--connect {
+  grid-template-columns: auto;
+  grid-template-rows: 35% auto 5fr 1fr;
+  grid-template-areas: "logo" "form" "monitor" "footer";
+}
+
+.header--connect {
+  grid-area: logo;
+}
+.header--connect a {
+  height: 100%;
+}
+.header--connect .logo_img {
+  height: 100%;
+}
+
+.form--connect {
+  grid-area: form;
+  flex-direction: column;
+  width: 100%;
+}
+.form--connect h2 {
+  margin-bottom: 2%;
+}
+
+.monitor--connect {
+  grid-area: monitor;
+  width: 100%;
+}
+
+.footer--connect {
+  grid-area: footer;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btnCon {
+  padding: 5px 10px;
+}
+
+.monitorArea {
+  background-color: white;
+  height: 70%;
+  width: 70%;
+  border: 1px solid black;
+}
+
+.btnMon {
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: silver;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 576px) {
+  .monitorArea {
+    justify-items: center;
+    width: 95%;
+    height: 90%;
+  }
+
+  .btnMon {
+    width: 45%;
+    margin: 5px;
+  }
+}
+.layout--help {
+  flex-direction: column;
+  background-image: url("../assets/tetra pak logo.svg");
+}
+
+.text--help {
+  margin: 2rem;
+}
+
+.footer--help {
+  align-self: end;
+}
+
+.layout--report {
+  flex-direction: column;
+}
+
+.header--report {
+  border-bottom: 2px solid black;
+}
+
+.main--report {
+  display: block;
+  overflow-y: auto;
+  background-color: whitesmoke;
+}
+
+.footer--report {
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+  background-color: whitesmoke;
+  border-top: 2px solid black;
+}
+
+.table {
+  --bs-table-border-color: black;
+}
+.table input {
+  width: 80%;
+}
+.table th {
+  width: 30%;
+  margin-left: 2rem;
+}
+.table textarea {
+  width: 90%;
+}/*# sourceMappingURL=main.css.map */

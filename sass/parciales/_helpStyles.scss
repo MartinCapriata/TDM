@@ -1,0 +1,12 @@
+.layout--help{
+    @extend .layout;
+    flex-direction: column;
+    background-image: url("../assets/tetra\ pak\ logo.svg");
+    @extend .bg--centrado;
+}
+.text--help{
+    margin: 2rem;
+}
+.footer--help{
+    align-self: end;
+}

@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/connectStyles.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <title>T.D.M. - Connect</title>
 </head>
 <body>
-    <div class="layout">
-        <header>
+    <div class="layout--connect">
+        <header class="header--connect">
             <a href="../index.html"><img class="logo_img" src="../assets/tetra pak logo.svg" alt="tetra pak logo"></a>
         </header>
-        <section id="form">
+        <section class="form--connect">
             <h2>Choose the line to connect:</h2>
             <form action="#" method="get">
                 <label for="ip">IP adress:</label>
@@ -21,10 +21,10 @@
                 <button type="submit" class="btnCon">Connect</button>
             </form>
         </section>
-        <section id="monitor">
+        <section class="monitor--connect">
             <div class="monitorArea" > Monitor de terminal</div> <!-- aqui luego irá algo como para ver el terminal del windows-->
         </section>
-        <footer>
+        <footer class="footer--connect">
             <div class="d-flex justify-content-center" style="width: 100%;">
                 <button class="btnMon">Ping</button> <!--boton para hacer ping a la ip-->
                 <button class="btnMon">Scan</button> <!-- boton para hacer un "arp" y escanear la red-->
