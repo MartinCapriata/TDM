@@ -1,0 +1,69 @@
+.layout--connect{
+    @extend .layout;
+    grid-template-columns: auto;
+    grid-template-rows: 35% auto 5fr 1fr;
+    grid-template-areas:"logo"
+                        "form"
+                        "monitor"
+                        "footer";
+}
+.header--connect{
+    grid-area: logo;
+    @extend .centrado;
+    & a{
+        height: 100%
+    }
+    & .logo_img{
+        height: 100%;
+    }
+}
+.form--connect{
+    grid-area: form;
+    @extend .centrado;
+    flex-direction: column;
+    width: 100%;
+    & h2{
+        margin-bottom: 2%;
+    }
+}
+.monitor--connect{
+    grid-area: monitor;
+    @extend .centrado;
+    width: 100%;
+}
+.footer--connect{    
+    grid-area: footer;
+    @extend .centrado;
+    flex-direction: column;
+    width: 100%;
+}
+.btnCon{
+    padding: 5px 10px;
+}
+.monitorArea{
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    border: 1px solid black;
+}
+.btnMon{
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+button:hover{
+    background-color: silver;
+    border: 2px solid black;
+}
+@media screen and (max-width: 576px){
+    .monitorArea{
+        justify-items: center;
+        width: 95%;
+        height: 90%;
+    }
+    .btnMon{
+        width: 45%;
+        margin: 5px;
+    }
+}

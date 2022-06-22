@@ -1,0 +1,57 @@
+.layout--home{
+    @extend .layout;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 25% auto 75px;
+    grid-template-areas:"logo"
+                        "pictures"
+                        "form"
+                        "footer";
+}
+
+
+.header--home{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+.pictures--home{
+    grid-area: pictures;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.form--home{
+    grid-area: form;
+    justify-self: center;
+}
+.footer--home{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.form_subtitle{
+    text-align: center;
+    margin-top: 3rem;
+}
+.form_text{
+    margin: 1rem;
+}
+.form_btn{
+    text-align: center;
+}
+
+@media screen and (max-width: 576px){
+    .layout--home{
+        grid-template-rows: 50% 40% 10%;
+        grid-template-areas:"logo"
+                            "form"
+                            "footer";
+    }    
+    .pictures--home{
+        display: none;
+    }
+}

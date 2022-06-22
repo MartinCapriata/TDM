@@ -1,0 +1,176 @@
+
+@mixin sizes($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+.layout--tpop{
+    @extend .layout;
+    grid-template-columns:10% repeat(7, 1fr) ;
+    grid-template-rows:repeat(3, 1fr) repeat(3, 20%) ;
+    grid-template-areas:"nav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav tpopNav"
+                        "nav workArea workArea workArea workArea workArea workArea workArea"
+                        "nav workArea workArea workArea workArea workArea workArea workArea"
+                        "navSteps workArea workArea workArea workArea workArea workArea workArea"
+                        "navSteps workArea workArea workArea workArea workArea workArea workArea"
+                        "navSteps workArea workArea workArea workArea workArea workArea workArea";
+}
+.navMenu{
+    grid-area: nav;
+    justify-content: center;   
+}
+.navSteps{
+    grid-area: navSteps;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include sizes(100%,100%);
+    padding: 15px;
+}
+.tpopNav{
+    grid-area: tpopNav;
+    padding: 0;
+    display: grid;
+    &.d-flex { 
+        flex: 1; 
+        justify-content: center; 
+        & .nav-item { 
+            align-items: center; 
+            display: flex; 
+            & button { 
+              height: 100%; 
+            } 
+        } 
+    } 
+}
+.workArea{
+    grid-area: workArea;    
+}
+.tpopNavMob{
+        display: none;
+        border-bottom: 1px solid navy;
+        & .nav{
+            justify-content: center;
+        }
+}
+.tpopNavMob__img{
+    height: 50px;
+    margin-top: 15px;
+}
+/* CSS Para el navegador TPOP/ TOOLS / Report */
+.navBarMenu{
+    height: 100%;
+    & .nav-link{
+        padding: 40px 0 40px 0;
+    }
+}
+.navbar-collapse{
+    z-index: 1;
+    @include sizes(100%,100%);
+    justify-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+
+    & .nav-link:hover{
+        background-color: rgb(200, 200, 200);
+        border-radius: 20px;
+    }
+}
+.navbar-nav{
+    justify-content: space-around;
+    @include sizes(100%,100%);
+    & .nav-link.active{
+        background-color: rgba(0, 0, 255, 0.5);
+        border-radius: 20px;
+    }
+}
+/* CSS Para el navegador modulos TPOP*/
+.nav-pills{
+    & .nav-link:hover{
+       background-color: rgb(200, 200, 200);
+       border-radius: 20px;
+       }
+    & .nav-link.active{
+        background-color: rgba(0, 0, 255, 0.5);
+        border-radius: 20px;
+    }
+}    
+/* CSS Para los botones de Step UP, Down y Alarm */
+.btn{
+    @extend .centrado;
+    margin: 5px;
+}
+.imgSteps{
+    background: linear-gradient(155deg, white 0%, gray 100%);
+    @include sizes(100%,100%);     
+    &:hover{
+        border: 4px navy solid;
+    }
+}
+.border{
+    border-style: solid;
+    border: 1px;
+    border-color: black;
+}
+/*PANELES TPOP*/
+.card{
+--bs-card-bg: #ffffffd3;
+}
+.card-img-top{
+    margin: 10px;
+    align-self: center;
+    width: 20%;
+}
+.tab-pane{
+    height: 100%;
+    @extend .bg--centrado;
+}
+/*Parte Mobile */
+@media screen and (max-width: 576px){
+    .layout--tpop{
+        @extend .layout;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas:"nav tpopNavMob tpopNavMob"
+                            "workArea workArea workArea"
+                            "navSteps navSteps navSteps";
+    }
+    .navMenu{
+        border-bottom: 1px solid navy;
+    }
+    .workArea{
+        width: 100%;
+    }
+    .tpopNavMob{
+        grid-area: tpopNavMob;
+        display: block;
+        & .dropdown-menu.show{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .tpopNav{
+        display: none;
+    }
+    .navSteps{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 5px;
+    }
+    .navbar-collapse{
+        border: 1px solid navy;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px black;
+        margin-top: 1rem;
+    }
+    .navBarMenu .nav-link{
+        padding: 20px 0 20px 0;
+        margin: 5px 0 5px 0;
+    }
+    .btnSteps{
+        height: 100%;
+    }
+}
