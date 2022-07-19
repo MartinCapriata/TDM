@@ -49,16 +49,19 @@
   padding: 0;
   display: grid;
 }
+.tpopNav .rowNav {
+  align-items: center;
+}
+.tpopNav .rowNav .nav-item {
+  display: flex;
+  height: 100%;
+}
+.tpopNav .rowNav .nav-item .nav-link img {
+  margin-right: 15px;
+}
 .tpopNav.d-flex {
   flex: 1;
   justify-content: center;
-}
-.tpopNav.d-flex .nav-item {
-  align-items: center;
-  display: flex;
-}
-.tpopNav.d-flex .nav-item button {
-  height: 100%;
 }
 
 .workArea {
@@ -73,14 +76,9 @@
   justify-content: center;
 }
 
-.tpopNavMob__img {
-  height: 50px;
-  margin-top: 15px;
-}
-
 /* CSS Para el navegador TPOP/ TOOLS / Report */
 .navBarMenu {
-  height: 100%;
+  width: 100%;
 }
 .navBarMenu .nav-link {
   padding: 40px 0 40px 0;
@@ -152,6 +150,7 @@
 
 .tab-pane {
   height: 100%;
+  overflow-x: auto;
 }
 
 /*Parte Mobile */
@@ -164,6 +163,7 @@
 
   .navMenu {
     border-bottom: 1px solid navy;
+    --bs-navbar-toggler-padding-y: 0;
   }
 
   .workArea {
@@ -172,12 +172,24 @@
 
   .tpopNavMob {
     grid-area: tpopNavMob;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .tpopNavMob .nav {
+    margin-bottom: 0;
   }
   .tpopNavMob .dropdown-menu.show {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: auto;
+    height: 80vh;
+  }
+  .tpopNavMob img {
+    height: 35px;
   }
 
   .tpopNav {
@@ -354,6 +366,9 @@ button:hover {
 .header--report {
   border-bottom: 2px solid black;
 }
+.header--report li {
+  width: 30%;
+}
 
 .main--report {
   display: block;
@@ -367,6 +382,9 @@ button:hover {
   justify-content: start;
   background-color: whitesmoke;
   border-top: 2px solid black;
+}
+.footer--report button {
+  width: 30%;
 }
 
 .table {

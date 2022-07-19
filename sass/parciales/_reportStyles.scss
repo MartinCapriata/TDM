@@ -4,6 +4,9 @@
 }
 .header--report{
     border-bottom: 2px solid black;
+    & li {
+        width: 30%;
+    }
 }
 .main--report{
     display: block;
@@ -16,6 +19,10 @@
     justify-content: start;
     background-color: whitesmoke;
     border-top: 2px solid black;
+    
+    & button {
+        width: 30%;
+    }
 }
 .table{
     --bs-table-border-color: black;

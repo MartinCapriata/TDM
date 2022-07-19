@@ -44,7 +44,7 @@
     <section class="container-fluid tpopNav">
       <ul class="nav nav-pills nav-justified d-flex flex-column" id="pills-tab" role="tablist">
         <!-- Primer Fila -->
-        <div class="d-flex">
+        <div class="d-flex rowNav">
           <!-- Boton Home -->
           <li class="nav-item" role="presentation">
           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="../assets/iconsTPOP/home.png" alt="icon HOME"> HOME</button>
@@ -75,7 +75,7 @@
           </li>
         </div>
         <!-- Segunda Fila -->
-        <div class="d-flex">
+        <div class="d-flex rowNav">
           <!-- Boton DIMC -->
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-dimc-tab" data-bs-toggle="pill" data-bs-target="#pills-dimc" type="button" role="tab" aria-controls="pills-dimc"   aria-selected="false"><img src="../assets/iconsTPOP/dimc.png" alt="icon DIMC"> DIMC</button>
@@ -111,7 +111,7 @@
     <section class="tpopNavMob">
       <ul class="nav nav-pills">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="tablist" aria-expanded="false"><img src="../assets/iconsTPOP/tpop.bmp" class="tpopNavMob__img" alt="logo tpop"></a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="tablist" aria-expanded="false"><img src="../assets/iconsTPOP/tpop.bmp"alt="logo tpop"></a>
         <ul class="dropdown-menu">
             <!-- Boton para Home -->
           <li class="nav-item" role="presentation">
@@ -167,11 +167,11 @@
     </li>
   </section>
       <!-- Areas de trabajo para los distintos modulos -->
-        <div class="workArea container-fluid tab-content overflow-auto" id="pills-tabContent">
+        <div class="workArea container-fluid tab-content" id="pills-tabContent">
           <!--Pagina para Home -->
-          <div class="tab-pane fade show active container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" style="background-image: url(../assets/a3-speed.png);">
-            <div class="row g-5">
-              <div class="col-6 col-sm-4">
+          <div class="tab-pane fade show active container overflow-auto" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" style="background-image: url(../assets/a3-speed.png);">
+            <div class="row">
+              <div class="col-6 col-sm-3">
                 <!-- Recipe card -->
                 <div class="card">
                   <img class="card-img-top" src="../assets/iconsTPOP/recipe.png" alt="recipe image">
@@ -184,7 +184,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4">
+              <div class="col-6 col-sm-3">
                 <!-- Machine number Card -->
                 <div class="card">
                   <img class="card-img-top" src="../assets/iconsTPOP/recipe.png" alt="recipe image">
@@ -195,7 +195,7 @@
                   </div>
                 </div>
               </div>
-            <div class="col-6 col-sm-4">
+            <div class="col-6 col-sm-3">
                 <!-- Preapplicator card -->
                 <div class="card">
                   <img class="card-img-top" src="../assets/iconsTPOP/recipe.png" alt="recipe image">
@@ -208,7 +208,7 @@
                   </div>
                 </div>
               </div>  
-                <div class="col-6 col-sm-4">
+                <div class="col-6 col-sm-3">
                   <!-- Software version card -->
                   <div class="card">
                     <img class="card-img-top" src="../assets/iconsTPOP/softs.png" alt="recipe image">
@@ -224,36 +224,46 @@
             </div>
           </div> 
           <!--Pagina para ASU -->
-          <div class="tab-pane fade" id="pills-asu" role="tabpanel" aria-labelledby="pills-asu-tab" tabindex="0" style="background-image: url(../assets/asu.png);">
+          <div class="tab-pane fade container" id="pills-asu" role="tabpanel" aria-labelledby="pills-asu-tab" tabindex="0" style="background-image: url(../assets/asu.png);">
             <div class="row">
-              ASU
+              <div class="col-6 col-sm-3">
+                <!-- Design pos correction -->
+                <div class="card">
+                  <img class="card-img-top" src="../assets/iconsTPOP/asu/asuSplice.bmp" alt="design correction image">
+                  <div class="card-body">
+                    <h4 class="card-title">Spliced Package Repeat Length</h4>
+                    <p class="card-text">Design pos. correction:</p>
+                    <p> "X" mm</p>
+                  </div>
+                </div>
+              </div>
               
             </div>  
           </div>
           
           <!-- Pagina para SAS -->
           <div class="tab-pane fade" id="pills-sas" role="tabpanel" aria-labelledby="pills-sas-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para UV -->
           <div class="tab-pane fade" id="pills-uv" role="tabpanel" aria-labelledby="pills-uv-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para TUBE FORMING -->
           <div class="tab-pane fade" id="pills-tf" role="tabpanel" aria-labelledby="pills-tf-tab" tabindex="0">TUBE FORMING</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para FILLING SYSTEM -->
           <div class="tab-pane fade" id="pills-fs" role="tabpanel" aria-labelledby="pills-fs-tab" tabindex="0">Prof</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para SERVICE UNIT -->
           <div class="tab-pane fade" id="pills-su" role="tabpanel" aria-labelledby="pills-su-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para DIMC -->
           <div class="tab-pane fade" id="pills-dimc" role="tabpanel" aria-labelledby="pills-dimc-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para ASSU -->
           <div class="tab-pane fade" id="pills-assu" role="tabpanel" aria-labelledby="pills-assu-tab" tabindex="0"></div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para PEROXIDE -->
           <div class="tab-pane fade" id="pills-perox" role="tabpanel" aria-labelledby="pills-perox-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para PACKAGE FORMING -->
           <div class="tab-pane fade" id="pills-pf" role="tabpanel" aria-labelledby="pills-pf-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para FFU -->
           <div class="tab-pane fade" id="pills-ffu" role="tabpanel" aria-labelledby="pills-ffu-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para CIP -->
           <div class="tab-pane fade" id="pills-cip" role="tabpanel" aria-labelledby="pills-cip-tab" tabindex="0">...</div>
-          <!-- Pagina para ASU -->
+          <!-- Pagina para MENU -->
           <div class="tab-pane fade" id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab" tabindex="0">...</div>
         </div>
   </div>
